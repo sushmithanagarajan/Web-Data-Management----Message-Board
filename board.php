@@ -32,7 +32,7 @@ ini_set('display_errors','On');
 //try connecting the phpmyadmin DB
 
 try {
-  $dbh = new PDO("mysql:host=127.0.0.1:3306;dbname=board","root","",array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+  $dbh = new PDO("mysql:host=127.0.0.1:306;dbname=","root","",array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
   if(isset($_GET['logout'])){
     session_destroy();
     //for a logout we have to destroy the session
